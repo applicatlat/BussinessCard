@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/titlePic">
+
+        <ImageView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/alternatif" />
+
+        <ImageView
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:src="@drawable/welcomer" />
+
+        <TextView
+            android:id="@+id/define"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:fontFamily="cursive"
+            android:textSize="20sp"
+            android:gravity="center_horizontal"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:textStyle="italic"
+            android:text="We Teach Classical Piano and Violin.
+            Proudly successful since 2006." />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/textHolder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/addressPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:onClick="mapper"
+                android:src="@drawable/location" />
+
+            <TextView
+                android:id="@+id/adress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Address: " />
+
+            <TextView
+                android:id="@+id/adressLot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Erenköy Mahallesi, Ethem Efendi Caddesi, Onur Tarman Apt. No:76, Kat:1 Daire :1-2, Kadıköy / İstanbul / Türkiye" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phonePlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/call1"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginTop="10dp"
+                android:onClick="phoneOne"
+                android:src="@drawable/call" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Office Phone: " />
+
+            <TextView
+                android:id="@+id/phoneLot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+90 216 467 56 18 " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phonePlace2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/call2"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+
+                android:onClick="phoneTwo"
+                android:src="@drawable/call" />
+
+            <TextView
+                android:id="@+id/phone2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Phone 1: " />
+
+            <TextView
+                android:id="@+id/phoneLot2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+90 532 467 77 73 " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phonePlace3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/call3"
+                android:layout_width="wrap_content"
+                android:layout_height="13dp"
+                android:layout_marginTop="10dp"
+                android:onClick="phoneThree"
+                android:layout_marginLeft="15dp"
+
+                android:src="@drawable/call" />
+
+            <TextView
+                android:id="@+id/phone3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Mobile Phone 2: " />
+
+            <TextView
+                android:id="@+id/phoneLot3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="+90 530 123 24 15 " />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/webSite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/globe"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="15dp"
+
+                android:layout_marginTop="10dp"
+                android:onClick="webber"
+                android:src="@drawable/globe" />
+            <TextView
+                android:id="@+id/webSiteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Web Site: " />
+
+            <TextView
+                android:id="@+id/webSiteLot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="www.alternatifatolye.com" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/emailHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="15dp"
+                android:onClick="mailer"
+                android:src="@drawable/email" />
+            <TextView
+                android:id="@+id/emailTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Email:" />
+
+            <TextView
+                android:id="@+id/emailLot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="alternatifatolye@gmail.com" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/hoursofOp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/clock"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="22dp"
+                android:src="@drawable/clock" />
+            <TextView
+                android:id="@+id/hoursTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Hours of Operation: " />
+
+            <TextView
+                android:id="@+id/hoursLot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="9 AM to 10 PM"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>
